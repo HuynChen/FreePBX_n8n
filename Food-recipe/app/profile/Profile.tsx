@@ -25,6 +25,7 @@ type TabParamList = {
   Favorite: undefined;
   Explore: undefined;
   Login: undefined;
+  Detail: undefined;
 };
 
 const Profile = () => {
@@ -106,6 +107,10 @@ const Profile = () => {
         {
           text: "Hủy",
           style: "cancel",
+        },
+        {
+          text: "Thông tin cá nhân",
+          onPress: () => router.push("/profile/Detail"),
         },
         {
           text: "Thay đổi ảnh đại diện",

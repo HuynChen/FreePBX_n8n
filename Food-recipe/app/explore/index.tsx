@@ -9,8 +9,6 @@ function index() {
     <Stack.Navigator>
       <Stack.Screen name="Explore" component={Explore} options={{ headerShown: false }} />
       <Stack.Screen name="POST" component={POST} options={{ headerShown: false }} />
-
-      
     </Stack.Navigator>
   )
 }

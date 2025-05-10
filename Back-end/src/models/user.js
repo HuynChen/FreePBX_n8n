@@ -9,6 +9,8 @@ const User = new Schema({
   bio: { type: String },
   favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: "Food" }],
   firstLogin: { type: Date, default: Date.now },
+  phone: { type: String },
+  dob: { type: String }  
 });
 
 module.exports = mongoose.model("User", User);
